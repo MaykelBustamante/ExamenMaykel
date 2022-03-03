@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[ParametroObtener]
-	@Id_Parametro int 
+	@Id_Parametro int = NULL
 AS BEGIN
   SET NOCOUNT ON
 
