@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\App\Proveedor\Edit.ts" />
-    <Content Remove="wwwroot\App\Proveedor\Grid.ts" />
+    <Content Remove="wwwroot\App\Parametro\Edit.ts" />
+    <Content Remove="wwwroot\App\Parametro\Grid.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -72,8 +72,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="wwwroot\App\Proveedor\Edit.ts" />
-    <TypeScriptCompile Include="wwwroot\App\Proveedor\Grid.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Parametro\Edit.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Parametro\Grid.ts" />
     <TypeScriptCompile Include="wwwroot\Assets\%40types\Apexchart\index.d.ts" />
     <TypeScriptCompile Include="wwwroot\Assets\%40types\axios\index.d.ts" />
     <TypeScriptCompile Include="wwwroot\Assets\%40types\bootstrap-validator\bvenums.ts" />

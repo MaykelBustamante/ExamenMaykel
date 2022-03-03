@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity.dbo
+namespace Entity
 {
-    class ParametroEntity
+    public class ParametroEntity
     {
         public int? Id_Parametro { get; set; }
         public string Codigo { get; set; }
         public string Descripcion { get; set; }
         public string Valor { get; set; }
-        public Boolean Estado { get; set; }
+        public bool Estado { get; set; }
     }
 }

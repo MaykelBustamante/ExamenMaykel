@@ -7,18 +7,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using WBL;
 
-namespace WebApp.Pages.Proveedor
+namespace WebApp.Pages.Parametro
 {
     public class GridModel : PageModel
     {
-        private readonly IProveedorService proveedorService;
+        private readonly IParametroService ParametroService;
 
-        public GridModel(IProveedorService proveedorService)
+        public GridModel(IParametroService ParametroService)
         {
-            this.proveedorService = proveedorService;
+            this.ParametroService = ParametroService;
         }
 
-        public IEnumerable<ProveedorEntity> GridList { get; set; } = new List<ProveedorEntity>();
+        public IEnumerable<ParametroEntity> GridList { get; set; } = new List<ParametroEntity>();
 
         public string Mensaje { get; set; } = "";
 
@@ -26,7 +26,7 @@ namespace WebApp.Pages.Proveedor
         {
             try
             {
-                GridList = await proveedorService.Get();
+                GridList = await ParametroService.Get();
 
                 if (TempData.ContainsKey("Msg"))
                 {
@@ -49,9 +49,9 @@ namespace WebApp.Pages.Proveedor
         {
             try
             {
-                var result = await proveedorService.Delete( new()
+                var result = await ParametroService.Delete( new()
                 {
-                   IdProveedor= id
+                   Id_Parametro= id
                 }          
                 );
 
